@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3=b_*0^w%c2gu%4^jd1dc*wpww17o*v6h#)ewt!*)ybt)i(k3n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.201.89.25','milestone.shinovadatabase.in','13.201.188.103']
 
 
 # Application definition
@@ -75,6 +75,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'milestone.wsgi.application'
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000","http://localhost:3001",'https://salemcosmeticclinic.netlify.app','https://shinovadatabase.in','https://milestone.shinova.in'
+]
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
